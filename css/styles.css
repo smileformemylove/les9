@@ -57,20 +57,21 @@
   gap: 27px;
 }
 
-.header-list .home {
+.header-list> li{
   padding-left: 25px;
+}
+
+.header-list .home {
   background: url(../img/home.svg) no-repeat 
   0 0/20px
 }
 
 .header-list .shop {
-  padding-left: 25px;
   background: url(../img/shop.svg) no-repeat 
   0 0/20px
 }
 
 .header-list .plantcare {
-  padding-left: 25px;
   background: url(../img/plantcare.svg) no-repeat 
   0 0/20px
 }
