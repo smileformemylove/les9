@@ -54,13 +54,30 @@
 
 .header-list {
   display: flex;
-  gap: 47px;
+  gap: 27px;
 }
 
-.header-list li {
-  display: flex;
-  position: relative;
+.header-list .home {
+  padding-left: 25px;
+  background: url(../img/home.svg) no-repeat 
+  0 0/20px
+}
 
+.header-list .shop {
+  padding-left: 25px;
+  background: url(../img/shop.svg) no-repeat 
+  0 0/20px
+}
+
+.header-list .plantcare {
+  padding-left: 25px;
+  background: url(../img/plantcare.svg) no-repeat 
+  0 0/20px
+}
+
+.header-list .blogs{
+  padding-right: 25px;
+  background: url(../img/blog.svg) no-repeat 50px 0/20px;
 }
 
 .header-list li a {
@@ -74,7 +91,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  color: #46A358;
+  background: #46A358;
 }
 
 .header-item{
@@ -95,15 +112,16 @@
 .drop {
   line-height: 20px;
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 0;
-  padding: 58px 0 0;
+  padding: 12px 0 0;
   display: none;
 }
 
-.drop li {
+.drop li a{
   padding: 7px 25px 8px 36px;
   font-weight: 400;
+  display: block;
   background: rgba(211, 250, 218, 0.9);
 }
 
@@ -113,7 +131,7 @@
 }
 
 
-.drop li:last-child:hover {
+.drop li:hover {
   background: #1A712A;
   color: #fff;
   font-weight: 700;
@@ -123,17 +141,20 @@
 .drop2 {
   position: absolute;
   top: 0;
-  left: 0;
-  padding: 0 12px;
-  margin: 0 -233px;
+  right: 100%;
+  padding: 0 5px;
+  margin: 0;
   display: none;
   color: #3D3D3D;
+}
+
+.drop, .drop2 li {
+  white-space: nowrap;
 }
 
 .drop li:nth-child(4):hover .drop2 {
   display: block;
 }
-
 
 
 .header-btn {
@@ -208,6 +229,11 @@
   margin: 44px 0 0 0;
   cursor: pointer;
   border: 0;
+}
+
+.login-span {
+  padding-left: 25px;
+  background: url(../img/login.svg) no-repeat 0 0/ 20px;
 }
 
 .paragraph span {
